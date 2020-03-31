@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script> -->
+
+   
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lobster">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+/* Add a gray background color with some padding */
+body {
+  font-family: Arial;
+  padding: 20px;
+  background: whitesmoke;
+}
+.header {
+    font-family: "Lobster", serif;
+  padding: 30px;
+  font-size: 40px;
+  /* font-style:italic ; */
+  text-align: center;
+  background: white;
+}
+
+            /* box-sizing: border-box;
+            padding: 0;
+            margin: 0;
+        }
+
+        body {
+            font-family: 'Josefin Sans', sans-serif;
+        } */
+
+        .navbar {
+            font-size: 18px;
+            background-image: linear-gradient(260deg, #2376ae 0%, #c16ecf 100%);
+            border: 1px solid rgba(0, 0, 0, 0.2);
+            padding-bottom: 10px;
+        }
+
+        .main-nav {
+            list-style-type: none;
+            display: none;
+        }
+
+        .nav-links,
+        .logo {
+            text-decoration: none;
+            color: rgba(255, 255, 255, 0.7);
+        }
+
+        .main-nav li {
+            text-align: center;
+            margin: 15px auto;
+        }
+
+        .logo {
+            display: inline-block;
+            font-size: 22px;
+            margin-top: 10px;
+            margin-left: 20px;
+        }
+
+        .navbar-toggle {
+            position: absolute;
+            top: 10px;
+            right: 20px;
+            cursor: pointer;
+            color: rgba(255, 255, 255, 0.8);
+            font-size: 24px;
+        }
+
+        .active {
+            display: block;
+        }
+
+        @media screen and (min-width: 768px) {
+            .navbar {
+                display: flex;
+                justify-content: space-between;
+                padding-bottom: 0;
+                height: 70px;
+                align-items: center;
+            }
+
+            .main-nav {
+                display: flex;
+                margin-right: 30px;
+                flex-direction: row;
+                justify-content: flex-end;
+            }
+
+            .main-nav li {
+                margin: 0;
+            }
+
+            .nav-links {
+                margin-left: 40px;
+            }
+
+            .logo {
+                margin-top: 0;
+            }
+
+            .navbar-toggle {
+                display: none;
+            }
+
+            .logo:hover,
+            .nav-links:hover {
+                color: rgba(255, 255, 255, 1);
+            }
+            .logo:visited,
+            .nav-links:visited {
+                color: rgba(255, 255, 255, 1);
+
+            }
+        }
+
+        .image{
+            background-color: whitesmoke;
+            margin-top: 20px;
+            
+        }
+        .linkk{
+            text-align: center;
+        }
+        .box{
+            background-color: white;
+            margin-left: 15%;
+            margin-right: 15%;
+        }
+
+
+        .footer {
+  /* padding: 20px; */
+  text-align: center;
+   width:100%; 
+   float:left;
+  /* margin-left: 25%;
+  margin-right: 25%; */
+  /* background: black; */
+  margin-top: 20px;
+}
+
+</style>
+</head>
+<body>
+    <div class="header">
+        <nav class="navbar">
+            <!-- <script>
+                let mainNav = document.getElementById('js-menu');
+        let navBarToggle = document.getElementById('js-navbar-toggle');
+        
+        navBarToggle.addEventListener('click', function () {
+          mainNav.classList.toggle('active');
+        });
+            </script> -->
+            <span class="navbar-toggle" id="js-navbar-toggle">
+                <i class="fas fa-bars"></i>
+            </span>
+            <a href="#" class="logo"><b>Tri</b></a>
+            <ul class="main-nav" id="js-menu">
+                <li>
+                    <a href="D:/problems/mypage.html" class="nav-links">Home</a>
+                </li>
+                <li>
+                    <a href="D:/problems/about.html" class="nav-links">About</a>
+                </li>
+                <li>
+                    <a href="#" class="nav-links">Articles</a>
+                </li>
+                <li>
+                    <a href="#" class="nav-links">Poems/stories</a>
+                </li>
+                <li>
+                    <a href="D:/problems/moments.html" class="nav-links">moments</a>
+                </li>
+            </ul>
+        </nav>
+      <h2 font-style= "italic">Moments</h2>
+    </div>
+    <div class="image">
+        <div class="box">
+            <img src = "D:\marksheets\my profile.jpg" style="width: 50%;margin-top: 20px;margin-bottom: 20px;margin-left: 25%;margin-right: 25%">
+            <img src = "D:\marksheets\IMG_0021.jpg" style="width: 50%;margin-top: 20px;margin-bottom: 20px;margin-left: 25%;margin-right: 25%">
+            <img src = "D:\marksheets\IMG_1198.jpg" style="width: 50%;margin-top: 20px;margin-bottom: 20px;margin-left: 25%;margin-right: 25%">
+            <img src = "D:\marksheets\IMG_1199.jpg" style="width: 50%;margin-top: 20px;margin-bottom: 20px;margin-left: 25%;margin-right: 25%">
+            <img src = "D:\marksheets\IMG_1202.jpg" style="width: 50%;margin-top: 20px;margin-bottom: 20px;margin-left: 25%;margin-right: 25%">
+            <a  class= "footer" href="D:/problems/moments1.html"><b style="background-color: white;color:tomato;font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;"> CLICK FOR THE NEXT</b></a>
+        
+
+        </div>
+
+    </div>
+
+
+     <div class="footer">
+    <h6 style="color:black"><b>Copyright: All rights reserved © Shrish Tripathi</b></h6>
+    </div>
+</body>
+
+</html>

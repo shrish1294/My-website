@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+   
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lobster">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+/* Add a gray background color with some padding */
+body {
+  font-family: Arial;
+  padding: 20px;
+  background: whitesmoke;
+}
+
+/* Header/Blog Title */
+.header {
+    font-family: "Lobster", serif;
+  padding: 30px;
+  font-size: 40px;
+  /* font-style:italic ; */
+  text-align: center;
+  background: white;
+}
+
+            /* box-sizing: border-box;
+            padding: 0;
+            margin: 0;
+        }
+
+        body {
+            font-family: 'Josefin Sans', sans-serif;
+        } */
+
+        .navbar {
+            font-size: 18px;
+            background-image: linear-gradient(260deg, #2376ae 0%, #c16ecf 100%);
+            border: 1px solid rgba(0, 0, 0, 0.2);
+            padding-bottom: 10px;
+        }
+
+        .main-nav {
+            list-style-type: none;
+            display: none;
+        }
+
+        .nav-links,
+        .logo {
+            text-decoration: none;
+            color: rgba(255, 255, 255, 0.7);
+        }
+
+        .main-nav li {
+            text-align: center;
+            margin: 15px auto;
+        }
+
+        .logo {
+            display: inline-block;
+            font-size: 22px;
+            margin-top: 10px;
+            margin-left: 20px;
+        }
+
+        .navbar-toggle {
+            position: absolute;
+            top: 10px;
+            right: 20px;
+            cursor: pointer;
+            color: rgba(255, 255, 255, 0.8);
+            font-size: 24px;
+        }
+
+        .active {
+            display: block;
+        }
+
+        @media screen and (min-width: 768px) {
+            .navbar {
+                display: flex;
+                justify-content: space-between;
+                padding-bottom: 0;
+                height: 70px;
+                align-items: center;
+            }
+
+            .main-nav {
+                display: flex;
+                margin-right: 30px;
+                flex-direction: row;
+                justify-content: flex-end;
+            }
+
+            .main-nav li {
+                margin: 0;
+            }
+
+            .nav-links {
+                margin-left: 40px;
+            }
+
+            .logo {
+                margin-top: 0;
+            }
+
+            .navbar-toggle {
+                display: none;
+            }
+
+            .logo:hover,
+            .nav-links:hover {
+                color: rgba(255, 255, 255, 1);
+            }
+            .logo:visited,
+            .nav-links:visited {
+                color: rgba(255, 255, 255, 1);
+
+            }
+        }
+
+/* Create two unequal columns that floats next to each other */
+/* Left column */
+.leftcolumn {   
+  float: left;
+  width: 75%;
+}
+
+/* Right column */
+.rightcolumn {
+  float: left;
+  width: 25%;
+  padding-left: 20px;
+}
+
+/* Fake image */
+.fakeimg {
+  background-color:white;
+  width: 100%;
+  /* height: 20%; */
+ /* padding-left: 20px;  */
+}
+
+/* Add a card effect for articles */
+.card {
+   background-color: white;
+   padding: 20px;
+   margin-top: 20px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Footer */
+.footer {
+  /* padding: 20px; */
+  text-align: center;
+  /* background: black; */
+  margin-top: 20px;
+}
+
+/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 800px) {
+  .leftcolumn, .rightcolumn {   
+    width: 100%;
+    padding: 0;
+  }
+}
+</style>
+</head>
+<body>
+
+<div class="header">
+    <nav class="navbar">
+        <!-- <script>
+            let mainNav = document.getElementById('js-menu');
+    let navBarToggle = document.getElementById('js-navbar-toggle');
+    
+    navBarToggle.addEventListener('click', function () {
+      mainNav.classList.toggle('active');
+    });
+        </script> -->
+        <span class="navbar-toggle" id="js-navbar-toggle">
+            <i class="fas fa-bars"></i>
+        </span>
+        <a href="#" class="logo"><b>Tri</b></a>
+        <ul class="main-nav" id="js-menu">
+            <li>
+                <a href="D:/problems/mypage.html" class="nav-links">Home</a>
+            </li>
+            <li>
+                <a href="D:/problems/about.html" target="blank" class="nav-links">About</a>
+            </li>
+            <li>
+                <a href="#" class="nav-links">Articles</a>
+            </li>
+            <li>
+                <a href="#" class="nav-links">Poems/stories</a>
+            </li>
+            <li>
+                <a href="D:/problems/moments.html" class="nav-links">moments</a>
+            </li>
+        </ul>
+    </nav>
+  <h2>Tripathi's Notebook</h2>
+  <img src="D:\marksheets\book640x640.jpg" >
+</div>
+
+<div class="row">
+  <div class="leftcolumn">
+    <div class="card">
+      <h2>TITLE HEADING</h2>
+      <h5>Title description</h5>
+      <div class="fakeimg" style="height:200px;">Image</div>
+      <p>Some text..</p>
+      <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
+    </div>
+    <div class="card">
+      <h2 style="font-family:'Lobster', serif ">TITLE HEADING</h2>
+      <h5>Title description</h5>
+      <div class="fakeimg" style="height:200px;">Image</div>
+      <p>Some text..</p>
+      <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
+    </div>
+  </div>
+  <div class="rightcolumn">
+    <!-- <div class="card"> -->
+      <!-- <h2>About Me</h2> -->
+      <!-- <div class="fakeimg" style="height:200px;"><img src="D:\marksheets\my profile.jpg" align="middle" height="200" width = "136"></div>
+      <p>Shrish Tripathi</p>
+    </div> -->
+    <div class="card">
+      <h3>Popular Post</h3>
+      <div class="fakeimg">Image</div><br>
+      <div class="fakeimg">Image</div><br>
+      <div class="fakeimg">Image</div>
+    </div>
+    <div class="card">
+      <h3>Social Networks</h3>
+      <p><a href="https://www.instagram.com/shrish_tripathi/"><img src="D:\marksheets\inst.jpg" height="80" width="80"></a>
+        <a href="https://www.facebook.com/shrish.tripathi.3557"><img src="D:\marksheets\fb.jpg" height="80" width="80"></a>
+        <a href="https://www.linkedin.com/in/shrish-tripathi-238632188/"><img src="D:\marksheets\linked.jpg" height="80" width="80"></a>
+
+        </p>
+    </div>
+  </div>
+</div>
+
+
+<div class="footer">
+
+  <h6 style="color:black"><b>Copyright: All rights reserved ©Shrish Tripathi</b></h6>
+</div>
+
+</body>
+</html>
+ 
